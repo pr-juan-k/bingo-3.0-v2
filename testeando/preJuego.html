@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="visita nuestro Bingo Digital y nuestra presencia en linea" name="description">
+    <meta content="Bingo 3.0 Digital" name="keywords">
+
+    <link href="img/logo-1.png" rel="icon">
+    <link href="img/logo-1.png" rel="apple-touch-icon">
+
+
+    <title>Bingo 3.0 - Selecciona tus Números</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="estiloMio.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Bingo 3.0 Digital</h1>
+            <p>Selecciona tus números favoritos para cada cartón</p>
+        </header>
+
+        <main>
+            <section class="cartones-section">
+                
+                
+                <div class="jugar-section" id="jugarSection" style="display: none;">
+                    <div class="jugar-container">
+                        <h3>¿Listo para jugar?</h3>
+                        <p>Tienes cartones completos. ¡Es hora de jugar al bingo!</p>
+                        <a href="jugar.html" class="btn btn-jugar">🎲 IR A JUGAR</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="carton-purchase">
+                <h2>Comprar Cartones</h2>
+                <div class="purchase-controls">
+                    <div class="payment-links-container">
+                        <a href="LINK_DE_MERCADO_PAGO" target="_blank" class="payment-btn mp-btn">
+                            <!--<img src="img/mercadopago.png" alt="Mercado Pago Logo"> -->
+                            <span>Pagar con Mercado Pago</span>
+                        </a>
+                        <a href="https://wa.me/NUMERO_DE_TELEFONO?text=Hola,%20acabo%20de%20realizar%20un%20pago%20para%20los%20cartones%20de%20bingo." target="_blank" class="payment-btn whatsapp-btn">
+                            <!--<img src="img/whatsapp.png" alt="WhatsApp Logo"> -->
+                            <span>Enviar Comprobante por WhatsApp</span>
+                        </a>
+                        <a href="../jugar.html" class="btn btn-jugar">🎲 IR A JUGAR</a>
+                    </div>
+                    <div class="carton-info">
+                        <span>Cartones comprados: <strong id="cartonCount">0</strong></span>
+                        <span>Total: $<strong id="totalCost">0</strong></span>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

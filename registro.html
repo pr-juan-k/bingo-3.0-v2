@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicons -->
+    <link href="img/logo-1.png" rel="icon">
+    <link href="img/logo-1.png" rel="apple-touch-icon">
+
+    <title>Bingo 3.0 - Registro</title>
+    <link rel="stylesheet" href="css/auth-styles.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h1>🎯 BINGO 3.0</h1>
+                <h2>Crear Cuenta</h2>
+            </div>
+            
+            <form id="registroForm" class="auth-form" method="POST" action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido_completo">Apellido </label>
+                    <input type="text" id="apellido_completo" name="apellido_completo" placeholder=" Perez" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="whatsapp">Número de WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="+57 300 123 4567" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password_registro">Contraseña</label>
+                    <!-- agregando contenedor para input y botón de mostrar/ocultar contraseña -->
+                    <div class="password-input-container">
+                        <input type="password" id="password_registro" name="password" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('password_registro')">👁️</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Contraseña</label>
+                    <!-- agregando contenedor para input y botón de mostrar/ocultar contraseña -->
+                    <div class="password-input-container">
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword('confirm_password')">👁️</button>
+                    </div>
+                </div>
+                
+                <button type="submit" class="auth-btn primary">Crear Cuenta</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>¿Ya tienes cuenta?</p>
+                <a href="index.html" class="auth-btn secondary">Iniciar Sesión</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/auth.js"></script>
+    <script>
+        function togglePassword(inputId) {
+            const input = document.getElementById(inputId);
+            const button = document.querySelector(`button[onclick="togglePassword('${inputId}')"]`);
+            if (input.type === 'password') {
+                input.type = 'text';
+                button.textContent = '🔒';
+            } else {
+                input.type = 'password';
+                button.textContent = '👁️';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+/* Estilos para la nueva sección de pago */
+
+.carton-purchase {
+    text-align: center;
+    padding: 20px;
+}
+
+.payment-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los botones */
+    margin-bottom: 20px;
+}
+
+.payment-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 50px; /* Bordes más redondeados */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.payment-btn img {
+    height: 24px;
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Estilos específicos para el botón de Mercado Pago */
+.mp-btn {
+    background-color: #009ee3;
+    color: #fff;
+    border: 2px solid #009ee3;
+}
+
+.mp-btn:hover {
+    background-color: #0077b3;
+    transform: translateY(-2px); /* Efecto de "elevación" */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos específicos para el botón de WhatsApp */
+.whatsapp-btn {
+    background-color: #25d366;
+    color: #fff;
+    border: 2px solid #25d366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: translateY(-2px); /* Efecto de "elevación" */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajustes para la información del total */
+.carton-info {
+    font-size: 18px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/* estilo tabla de administrador */
+
+
+/* Estilos para la sección de administración de solicitudes */
+.admin-solicitudes {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.admin-solicitudes h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.solicitudes-container {
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para la lista de cartones */
+.carton-list {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+}
+
+.carton-list li {
+    margin-bottom: 5px;
+}
+
+.carton-id {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Estilos para el botón de "Pago" */
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pago {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+}
+
+.btn-pago:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el estado del pago */
+.status-solicitud {
+    color: #dc3545; /* Rojo para "Solicitado" */
+    font-weight: bold;
+}
+
+/* Diseño responsivo para la tabla */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

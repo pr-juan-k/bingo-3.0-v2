@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="visita nuestro Bingo Digital y nuestra presencia en linea" name="description">
+    <meta content="Bingo 3.0 Digital" name="keywords">
+
+    <link href="img/logo-1.png" rel="icon">
+    <link href="img/logo-1.png" rel="apple-touch-icon">
+
+
+    <title>Bingo 3.0 - Selecciona tus Números</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="testeando/estiloMio.css"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Bingo 3.0 Digital</h1>
+            <p>Selecciona tus números favoritos para cada cartón</p>
+        </header>
+
+        <main>
+            <section class="admin-solicitudes">
+                <a href="index.html" class="btn btn-primary">Salir  </a>
+                <h2>📝 Solicitudes de Cartones</h2>
+                <div class="solicitudes-container">
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre de Usuario</th>
+                                <th>Cartones y Números</th>
+                                <th>Monto a Pagar</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Nombre de Usuario">usuario123</td>
+                                <td data-label="Cartones y Números">
+                                    <ul class="carton-list">
+                                        <li><span class="carton-id">Cartón 1:</span> 1, 15, 23</li>
+                                        <li><span class="carton-id">Cartón 2:</span> 56, 78, 90</li>
+                                    </ul>
+                                </td>
+                                <td data-label="Monto a Pagar">$4,000</td>
+                                <td data-label="Estado" class="status-solicitud">Solicitado</td>
+                                <td data-label="Acciones">
+                                    <button class="btn btn-pago">Pago</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Nombre de Usuario">maria_g</td>
+                                <td data-label="Cartones y Números">
+                                    <ul class="carton-list">
+                                        <li><span class="carton-id">Cartón 1:</span>49, 72, 85</li>
+                                    </ul>
+                                </td>
+                                <td data-label="Monto a Pagar">$2,000</td>
+                                <td data-label="Estado" class="status-solicitud">Solicitado</td>
+                                <td data-label="Acciones">
+                                    <button class="btn btn-pago">Pago</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            
+
+           
+
+            
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

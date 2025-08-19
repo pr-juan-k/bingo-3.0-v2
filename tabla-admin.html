@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabla-admin.css">
+    <title>Sección Admin - Tabla Desplegable</title>
+</head>
+<body>
+    <!-- Sección desplegable para agregar en la página de juego -->
+    <div class="admin-section">
+        <!-- Barra desplegable -->
+        <div class="admin-toggle-bar" onclick="toggleAdminPanel()">
+            <span class="admin-title">Panel de Administración</span>
+            <span class="admin-arrow" id="adminArrow">▼</span>
+        </div>
+        
+        <!-- Panel desplegable -->
+        <div class="admin-panel" id="adminPanel">
+            <div class="admin-table-container">
+                <table class="admin-table" id="adminTable">
+                    <thead>
+                        <tr>
+                            <th>Nombre y Apellido</th>
+                            <th>Cartones Solicitados</th>
+                            <th>Estado de Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody id="adminTableBody">
+                        <!-- Los datos se cargarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="tabla-admin-code.js"></script>
+</body>
+</html>
